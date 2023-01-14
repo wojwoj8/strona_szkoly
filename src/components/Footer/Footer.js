@@ -4,20 +4,25 @@ import './Footer.css'
 function Footer(){
 
     return(
-        <div>
-            <div>
-            Adres: 
-ul. Białe Zagłębie 21, 26-052 Nowiny, woj. świętokrzyskie 
+        <div class="footer">
+            <div class="left-f">
+            <p><b>Adres:</b>
+            <br></br> 
+ul. Białe Zagłębie 21, 26-052 Nowiny, woj. świętokrzyskie </p>
             </div>
             
-            <div>
-            Telefon: (41) 3465363
-            Telefon świetlica szkolna: 518245969
+            <div class="middle-f">
+            <p>
+            <b>Telefon:</b> (41) 3465363<br></br>
+            <b>Telefon świetlica szkolna:</b><br></br> 518245969
+            </p>
             </div>
 
-            <div>
-            e-mail: 
-spnowiny@poczta.onet.pl
+            <div class="right-f">
+                <p>
+            <b>e-mail:</b>
+            <br></br> 
+spnowiny@poczta.onet.pl</p>
             </div>
         </div>
     )

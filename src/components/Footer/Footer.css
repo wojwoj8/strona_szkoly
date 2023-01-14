@@ -1,0 +1,18 @@
+.footer{
+    display:flex;
+    width:100%;
+    background-color: rgb(75, 4, 4);
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: baseline;
+    color:white;
+}
+.left-f{
+
+}
+.middle-f{
+    
+}
+.right-f{
+    
+}
