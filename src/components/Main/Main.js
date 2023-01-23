@@ -5,20 +5,20 @@ import image from './img1.bmp';
 function Main(){
 
     return(
-        <div class="main-container"> 
+        <div className="main-container"> 
         {/* https://cdn.pixabay.com/photo/2017/09/26/04/28/classroom-2787754_960_720.jpg */}
-            <div class="obrazki">
+            <div className="obrazki">
                 <img alt="Obrazek3" id="obrazki-main" src="https://cdn.pixabay.com/photo/2017/09/26/04/28/classroom-2787754_960_720.jpg"/>
             </div>
             <h3>Aktualności</h3>
-            <div class="akt">
-                <div class="grid-cont">
-                    <div class="grid-elem">
-                        <div class="left">
+            <div className="akt">
+                <div className="grid-cont">
+                    <div className="grid-elem">
+                        <div className="left">
                             <img src={image} alt="akt_tmp"/>
                         </div>
-                        <div class="text_date">
-                            <div class="data-svg">
+                        <div className="text_date">
+                            <div className="data-svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm3 8H4v8h16v-8zm-5-6H9v2H7V5H4v4h16V5h-3v2h-2V5zm-9 8h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"/> </g> </svg>
                                 <span>01.01.23</span>
                             </div>
@@ -34,12 +34,12 @@ function Main(){
                             </p>
                         </div>
                     </div>
-                    <div class="grid-elem">
-                        <div class="left">
+                    <div className="grid-elem">
+                        <div className="left">
                            <img src={image} alt="akt_tmp"/>
                         </div>
-                        <div class="text_date">
-                            <div class="data-svg">
+                        <div className="text_date">
+                            <div className="data-svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm3 8H4v8h16v-8zm-5-6H9v2H7V5H4v4h16V5h-3v2h-2V5zm-9 8h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"/> </g> </svg>
                                 <span>03.01.23</span>
                             </div>
@@ -55,12 +55,12 @@ function Main(){
                             </p>
                         </div>
                     </div>
-                    <div class="grid-elem">
-                        <div class="left">
+                    <div className="grid-elem">
+                        <div className="left">
                             <img src={image} alt="akt_tmp"/>
                         </div>
-                        <div class="text_date">
-                            <div class="data-svg">
+                        <div className="text_date">
+                            <div className="data-svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm3 8H4v8h16v-8zm-5-6H9v2H7V5H4v4h16V5h-3v2h-2V5zm-9 8h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"/> </g> </svg>
                                 <span>08.01.23</span>
                             </div>
@@ -76,12 +76,12 @@ function Main(){
                             </p>
                         </div>
                     </div>
-                    <div class="grid-elem">
-                        <div class="left">
+                    <div className="grid-elem">
+                        <div className="left">
                             <img src={image} alt="akt_tmp"/>
                         </div>
-                        <div class="text_date">
-                            <div class="data-svg">
+                        <div className="text_date">
+                            <div className="data-svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm3 8H4v8h16v-8zm-5-6H9v2H7V5H4v4h16V5h-3v2h-2V5zm-9 8h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"/> </g> </svg>
                                 <span>13.01.23</span>
                             </div>

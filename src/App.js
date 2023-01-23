@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/nav/Nav';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
+import Szkola from './components/Szkola';
 
 function App() {
+  let Component;
+  switch (window.location.pathname) {
+    case "/":
+      Component = Main;
+      break;
+    case "/szkola":
+      Component = Szkola;
+      break;
+    case "/strefa_ucznia":
+      break;
+    case "/dokumenty":
+      break;
+    case "/kontakty":
+      break;
+    case "/plan_zajec":
+      break;
+    default:
+      Component = Error;
+   }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      <Component/>
+      <Footer/>
+    </>
   );
 }
 
