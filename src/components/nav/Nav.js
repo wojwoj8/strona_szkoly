@@ -1,8 +1,8 @@
 import React from "react";
 import './Nav.css';
+import { Link } from 'react-router-dom';
+
 function Nav(){
-
-
 
     return(
         <div className="nav-container">
@@ -17,12 +17,12 @@ function Nav(){
             <div className="nav-list">
                 <nav>
                     <ul>
-                        <li><a href="/">Strona główna</a></li>
-                        <li><a href="/szkola">Szkoła</a></li>
-                        <li><a href="/strefa_ucznia">Strefa ucznia</a></li>
-                        <li><a href="/dokumenty">Dokumenty</a></li>
-                        <li><a href="/kontakty">Kontakt</a></li>
-                        <li><a href="/plan_zajec">Plan zajęć</a></li>
+                        <li><Link to="/">Strona główna</Link></li>
+                        <li><Link to="/szkola">Szkoła</Link></li>
+                        <li><Link to="/strefa_ucznia">Strefa ucznia</Link></li>
+                        <li><Link to="/dokumenty">Dokumenty</Link></li>
+                        <li><Link to="/kontakt">Kontakt</Link></li>
+                        <li><Link to="/plan_zajec">Plan zajęć</Link></li>
                     </ul>
                 </nav>
             </div>
