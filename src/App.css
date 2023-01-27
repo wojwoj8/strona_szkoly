@@ -80,6 +80,7 @@ header > img{
   border:1px solid var(--border-col);
   border-radius: 15px;
   background-color: var(--white-back);
+  padding-bottom:3rem;
 }
 .grid-elem:first-of-type{
   margin-top: 50px !important;
