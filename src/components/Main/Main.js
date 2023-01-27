@@ -1,5 +1,5 @@
 import React from "react";
-import './Main.css';
+import '../../App.css';
 import image from './img1.bmp';
 
 function Main(){

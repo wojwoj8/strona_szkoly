@@ -1,38 +1,171 @@
-.App {
+:root{
+  --white-back: white;
+  --background-col: rgb(243, 243, 243);
+  --page-padding: 1rem 10rem;
+  --border-col: rgb(211, 207, 207);
+  --back: #3b2020;
+}
+body{
+  height:100%;
+  background-color: var(--background-col);
+}
+body, html{
+  min-width: 1100px;
+}
+.nav-list{
+  display:flex;
+  width:100%;
+  justify-content: center;
+  background-color: var(--white-back);
+  
+}
+
+nav ul li {
+  margin: auto;
+  display: inline;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: var(--white-back);
+}
+header{
+  padding:var(--page-padding);
+  display:flex;
+  justify-content: space-between;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header > img{
+  width:100px;
+  height: 110px;
+}
+.title > h1{
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 2.8rem;
+  margin-top:0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.obrazki{
+  margin-top: 1rem;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.obrazki > img{
+  width:80vw;
+  height:30vh;
+}
+.main-container{
+  display:flex;
+  flex-direction: column;
+  
+}
+.main-container > h3{
+  display:flex;
+  justify-content: center;
+}
+.container > h1{
+  display:flex;
+  justify-content: center;
+}
+.akt{
+  padding: var(--page-padding);
+  
+  
+}
+.grid-cont{
+  display:grid;
+  gap:0px;
+  grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+  border:1px solid var(--border-col);
+  border-radius: 15px;
+  background-color: var(--white-back);
+}
+.grid-elem:first-of-type{
+  margin-top: 50px !important;
+}
+.grid-elem{
+  display:flex;
+  flex-direction: row;
+  border:1px solid var(--border-col);
+  border-radius: 5px;
+  margin:10px clamp(10px, calc(10vw - 100px), 130px);
+}
+.left{
+  width: clamp(100px, 200px, 230px);
+  display:flex;
+  height: minmax(100px, 250px);  
+}
+.left > img{
+  padding:10px;
+  width: clamp(100px, 200px, 230px);
+  height: minmax(100px, 250px);
 }
 
-.App-link {
-  color: #61dafb;
+.data-svg{
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height:20px;
+  padding-right: 5px;
+}
+.text_date > p{
+  padding: 0px 25px;
+}
+span{
+  font-weight: 600;
+  font-size: 1rem;
+}
+svg{
+  width:20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1100px) {
+  .obrazki > img {
+    width:820px;
+    height:280px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.footer{
+  display:flex;
+  width:100%;
+  background-color: var(--back);
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: baseline;
+  color:white;
+}
+
+/* .left-f{
+
+}
+.middle-f{
+  
+}
+.right-f{
+  
+} */
+
+/* SZKOLA */
+.szkol-text{
+  padding: 10px clamp(10px, calc(10vw - 100px), 130px);
+}
+.szkol-zdj-tit > h3{
+  display:flex;
+  justify-content: center;
+}
+.szkol-zdj{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 15px;
+}
+.zdj-elem > img{
+  width: clamp(100px, 330px, 330px);
+  height: minmax(100px, 350px);
+}
+.zdj-elem{
+  display:flex;
+  justify-content: center;
+  /* background-color: #bccbde; */
 }
