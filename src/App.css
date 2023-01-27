@@ -1,9 +1,10 @@
 :root{
   --white-back: white;
   --background-col: rgb(243, 243, 243);
-  --page-padding: 1rem 10rem;
+  --page-padding: 1rem 15rem;
   --border-col: rgb(211, 207, 207);
   --back: #3b2020;
+  --shadow: 0px 3px 4px 0 rgba(0, 0, 0, 0.135), 0 3px 14px 0 rgba(0, 0, 0, 0.121);
 }
 body{
   height:100%;
@@ -60,7 +61,7 @@ header > img{
   flex-direction: column;
   
 }
-.main-container > h3{
+.main-container > h2{
   display:flex;
   justify-content: center;
 }
@@ -81,6 +82,11 @@ header > img{
   border-radius: 15px;
   background-color: var(--white-back);
   padding-bottom:3rem;
+  margin-top:20px;
+}
+.grid-cont > h2{
+  display:flex;
+  justify-content: center;
 }
 .grid-elem:first-of-type{
   margin-top: 50px !important;
@@ -152,6 +158,10 @@ svg{
 .szkol-text{
   padding: 10px clamp(10px, calc(10vw - 100px), 130px);
 }
+.szkol-text > h1{
+  display:flex;
+  justify-content: center;
+}
 .szkol-zdj-tit > h3{
   display:flex;
   justify-content: center;
@@ -169,4 +179,76 @@ svg{
   display:flex;
   justify-content: center;
   /* background-color: #bccbde; */
+}
+
+/* STREFA UCZNIA */
+.strefa-kl{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 70px 15px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.kl-elem{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  /* background-color: #bccbde; */
+}
+.kl-elem > p{
+  text-align: center;
+  margin:0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.kl-elem > a{
+  text-align: center;
+  margin:0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+hr{
+  width:100%;
+  height:2px;
+  color: var(--back);
+  background-color: var(--back);
+  border-color: var(--back);
+  border-width: 1px;
+  border-top-style: none;
+  border-left-style: none;
+  box-shadow: var(--shadow);
+}
+/* DOKUMENTY */
+.doc{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px 15px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.doc-elem{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  /* background-color: #bccbde; */
+}
+.doc-elem > p{
+  text-align: center;
+  margin:0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+p > a{
+  text-align: center;
+  margin:0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
 }

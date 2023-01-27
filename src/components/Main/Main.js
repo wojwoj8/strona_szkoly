@@ -10,9 +10,11 @@ function Main(){
             <div className="obrazki">
                 <img alt="Obrazek3" id="obrazki-main" src="https://cdn.pixabay.com/photo/2017/09/26/04/28/classroom-2787754_960_720.jpg"/>
             </div>
-            <h3>Aktualności</h3>
+            
             <div className="akt">
                 <div className="grid-cont">
+                    <h2>Aktualności</h2>
+                    <hr></hr>
                     <div className="grid-elem">
                         <div className="left">
                             <img src={image} alt="akt_tmp"/>
