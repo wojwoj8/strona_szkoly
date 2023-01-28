@@ -18,11 +18,10 @@ function Nav(){
                 <nav>
                     <div className="nav-butt">
                         <Link to="/"><button>Strona główna</button></Link>
-                        <button><Link to="/szkola">Szkoła</Link></button>
-                        <button><Link to="/strefa_ucznia">Strefa ucznia</Link></button>
-                        <button><Link to="/dokumenty">Dokumenty</Link></button>
-                        <button><Link to="/kontakt">Kontakt</Link></button>
-                        <button><Link to="/plan_zajec">Plan zajęć</Link></button>
+                        <Link to="/szkola"><button>Szkoła</button></Link>
+                        <Link to="/strefa_ucznia"><button>Strefa ucznia</button></Link>
+                        <Link to="/dokumenty"><button>Dokumenty</button></Link>
+                        <Link to="/plan_zajec"><button>Plan zajęć</button></Link>
                     </div>
                 </nav>
             </div>
