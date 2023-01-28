@@ -1,7 +1,19 @@
 import React from "react";
 // import './Nav.css';
+import defaultData from "./defaultData";
+
 
 function Dokumenty(){
+
+    const Content = () =>{
+        return(
+            defaultData.map(data => (
+                <div className="doc-elem" key={data.index}>
+                    <p>{data.opis}: <a href={data.link}>link</a></p>
+                </div>
+            ))
+        )
+    }    
 
     return(
         <>
@@ -17,43 +29,8 @@ function Dokumenty(){
                     <hr></hr>
                 
                     <div className="doc">
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                        <div className="doc-elem">
-                            <p>Opis linku: <a href="#">link</a></p>
-                        </div>
-                </div>
+                        <Content/>
+                    </div>
             </div>    
         </div>
         </>
