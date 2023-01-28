@@ -8,6 +8,12 @@ function Dokumenty(){
         <div className='akt'>
             <div className='grid-cont szkol-text'>
                 <h1>Dokumenty</h1>
+                <hr></hr>
+                <div className="dok-but">
+                    <button>Dla Rodziców</button>
+                    <button>Dla Personelu</button>
+                    <button>Dla Uczniów</button>
+                </div>
                     <hr></hr>
                 
                     <div className="doc">

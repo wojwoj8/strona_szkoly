@@ -14,20 +14,20 @@ function Nav(){
                 </div>
                 <img alt="Obrazek2" id="godlo-szkoly" src="http://www.spnowiny.nazwa.pl/images/xlogsz3.png.pagespeed.ic.dPLGvPe7MM.webp"/>
             </header>
-            <div className="nav-list">
+            
                 <nav>
-                    <ul>
-                        <li><Link to="/">Strona główna</Link></li>
-                        <li><Link to="/szkola">Szkoła</Link></li>
-                        <li><Link to="/strefa_ucznia">Strefa ucznia</Link></li>
-                        <li><Link to="/dokumenty">Dokumenty</Link></li>
-                        <li><Link to="/kontakt">Kontakt</Link></li>
-                        <li><Link to="/plan_zajec">Plan zajęć</Link></li>
-                    </ul>
+                    <div className="nav-butt">
+                        <Link to="/"><button>Strona główna</button></Link>
+                        <button><Link to="/szkola">Szkoła</Link></button>
+                        <button><Link to="/strefa_ucznia">Strefa ucznia</Link></button>
+                        <button><Link to="/dokumenty">Dokumenty</Link></button>
+                        <button><Link to="/kontakt">Kontakt</Link></button>
+                        <button><Link to="/plan_zajec">Plan zajęć</Link></button>
+                    </div>
                 </nav>
             </div>
             
-        </div>
+        
     )
 
 }
