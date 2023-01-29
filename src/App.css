@@ -130,6 +130,10 @@ header > img{
   border-radius: 5px;
   margin:10px clamp(10px, calc(10vw - 100px), 130px);
 }
+.grid-elem > a{
+  text-decoration: none;
+  color: black;
+}
 .left{
   width: clamp(100px, 200px, 230px);
   display:flex;
@@ -290,7 +294,7 @@ p > a{
   display:flex;
   justify-content: space-evenly
 }
-.dok-but > button{
+.dok-but > a > button{
   background-color: var(--back);
   color: var(--white-back);
   margin-top:1rem;
@@ -307,7 +311,7 @@ p > a{
   margin-top:0;
   z-index: 3;
 }
-.dok-but > button:hover{
+.dok-but > a > button:hover{
   background-color: var(--back-but);
 }
 .dok-but > button:focus{

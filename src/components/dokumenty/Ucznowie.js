@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import defaultData from "./defaultData";
 
 
-function Dokumenty(){
+function Ucznowie(){
 
     const Content = () =>{
         return(
@@ -20,7 +20,7 @@ function Dokumenty(){
         <>
         <div className='akt'>
             <div className='grid-cont szkol-text'>
-                <h1>Dokumenty dla rodziców</h1>
+                <h1>Dokumenty dla uczniów</h1>
                 <hr></hr>
                 <div className="dok-but">
                     <Link to='/dokumenty'><button>Dla Rodziców</button></Link>
@@ -40,4 +40,4 @@ function Dokumenty(){
 
 }
 
-export default Dokumenty;
+export default Ucznowie;
